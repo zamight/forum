@@ -19,11 +19,6 @@ function error($string)
 
 }
 
-function validate_login($username, $password)
-{
-    return false;
-}
-
 function rand_str($length)
 {
     $list = array('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
@@ -43,5 +38,35 @@ function rand_str($length)
 
 function generate_salt()
 {
+    global $plugin;
+
+    $plugin->run_plugins('generate_salt');
+
     return rand_str(15);
+}
+
+function validate_login($username, $password)
+{
+    global $plugin, $db;
+
+    $plugin->run_plugins('validate_login');
+
+    return true;
+}
+
+function create_user_session($username, $password)
+{
+    global $plugin;
+    //TODO: Make a session or cookie and one for DB.
+
+    $plugin->run_plugins('create_user_session');
+
+}
+
+function clean_str($string)
+{
+    global $plugin;
+    //TODO: Clean string and resturn
+    $plugin->run_plugins('create_user_session');
+    return $string;
 }

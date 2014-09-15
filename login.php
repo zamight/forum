@@ -30,8 +30,12 @@ else
 {
     if(isset($_POST['username']) AND isset($_POST['password']))
     {
-        if(validate_login($_POST['username'], $_POST['password']))
+        $username = clean_str($_POST['username']);
+        $password = clean_str($_POST['password']);
+
+        if(validate_login($username, $password))
         {
+            create_user_session($username, $password);
             $plugin->run_plugins('login_successful');
             $template->build('login_successful');
         }
