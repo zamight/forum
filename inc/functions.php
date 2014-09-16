@@ -47,11 +47,18 @@ function generate_salt()
 
 function validate_login($username, $password)
 {
-    global $plugin, $db;
+    global $plugin, $db, $user;
 
     $plugin->run_plugins('validate_login');
 
-    return true;
+    $isvalid = $db->fetch_row('users', 'password, salt', 'WHERE');
+
+    if($isvalid)
+    {
+        return true;
+    }
+
+        return false;
 }
 
 function create_user_session($username, $password)
@@ -70,3 +77,32 @@ function clean_str($string)
     $plugin->run_plugins('create_user_session');
     return $string;
 }
+
+function isSuperAdmin()
+{
+    global $settings, $user;
+    //TODO: Check to see if user logged in.
+
+    if(validate_login($user->username, $user->password))
+    {
+        if(str_pos(",{$settings['isSuperAdmin']},", ",{$user->uid},") === false)
+        {
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

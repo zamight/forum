@@ -21,7 +21,7 @@ class Mysqli_db
         }
     }
 
-    function fetch_row($one, $two)
+    function fetch_row($table, $column, $where)
     {
 
     }

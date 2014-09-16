@@ -9,3 +9,5 @@ $settings['db']['host'] = 'localhost';
 $settings['db']['username'] = 'root';
 $settings['db']['password'] = '';
 $settings['db']['table'] = 'tes';
+
+$settings['isSuperAdmin'] = '1';

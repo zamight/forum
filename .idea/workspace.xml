@@ -45,7 +45,12 @@
         <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="38" column="12" selection-start="891" selection-end="932" vertical-scroll-proportion="-13.730769" vertical-offset="289" max-vertical-offset="1054">
-              <folding />
+              <folding>
+                <marker date="1410738807098" expanded="true" signature="417:584" placeholder="{...}" />
+                <marker date="1410738807098" expanded="true" signature="475:520" placeholder="{...}" />
+                <marker date="1410738807098" expanded="true" signature="655:1139" placeholder="{...}" />
+                <marker date="1410738807098" expanded="true" signature="813:992" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,7 +58,27 @@
       <file leaf-file-name="class_user.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/class_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="5" selection-start="1160" selection-end="1160" vertical-scroll-proportion="-20.923077" vertical-offset="306" max-vertical-offset="1275">
+            <state line="63" column="29" selection-start="1476" selection-end="1476" vertical-scroll-proportion="-41.192307" vertical-offset="0" max-vertical-offset="1513">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class_template.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/class_template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="-24.038462" vertical-offset="72" max-vertical-offset="969">
+              <folding>
+                <marker date="1410676415001" expanded="true" signature="274:487" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class_mysqli.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/class_mysqli.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="46" selection-start="436" selection-end="436" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -62,7 +87,16 @@
       <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="39" selection-start="895" selection-end="895" vertical-scroll-proportion="0.59749305" vertical-offset="285" max-vertical-offset="1309">
+            <state line="89" column="0" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.7869081" vertical-offset="948" max-vertical-offset="1938">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="224" selection-end="236" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -79,14 +113,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/inc/class_plugin.php" />
-        <option value="$PROJECT_DIR$/inc/settings.php" />
-        <option value="$PROJECT_DIR$/inc/class_mysqli.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/lang/en.php" />
         <option value="$PROJECT_DIR$/inc/class_template.php" />
         <option value="$PROJECT_DIR$/plugintest.php" />
-        <option value="$PROJECT_DIR$/inc/class_user.php" />
         <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/inc/class_mysqli.php" />
+        <option value="$PROJECT_DIR$/inc/class_user.php" />
+        <option value="$PROJECT_DIR$/inc/settings.php" />
         <option value="$PROJECT_DIR$/inc/functions.php" />
       </list>
     </option>
@@ -234,7 +268,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.139375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -288,39 +322,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/inc/class_mysqli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="348" selection-end="370" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="141" selection-end="141" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lang/en.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="20" selection-start="336" selection-end="336" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="646">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/class_template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="803" selection-end="803" vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="969">
-          <folding>
-            <marker date="1410676415001" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/class_plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
@@ -339,23 +343,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/class_user.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="5" selection-start="1160" selection-end="1160" vertical-scroll-proportion="-20.923077" vertical-offset="306" max-vertical-offset="1275">
+        <state line="38" column="12" selection-start="891" selection-end="932" vertical-scroll-proportion="-13.730769" vertical-offset="289" max-vertical-offset="1054">
+          <folding>
+            <marker date="1410738807098" expanded="true" signature="417:584" placeholder="{...}" />
+            <marker date="1410738807098" expanded="true" signature="475:520" placeholder="{...}" />
+            <marker date="1410738807098" expanded="true" signature="655:1139" placeholder="{...}" />
+            <marker date="1410738807098" expanded="true" signature="813:992" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/class_mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="46" selection-start="436" selection-end="436" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
+    <entry file="file://$PROJECT_DIR$/inc/class_template.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="891" selection-end="932" vertical-scroll-proportion="-13.730769" vertical-offset="289" max-vertical-offset="1054">
+        <state line="41" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="-24.038462" vertical-offset="72" max-vertical-offset="969">
+          <folding>
+            <marker date="1410676415001" expanded="true" signature="274:487" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/class_plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="615" selection-end="615" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/class_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="29" selection-start="1476" selection-end="1476" vertical-scroll-proportion="-41.192307" vertical-offset="0" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="224" selection-end="236" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="39" selection-start="895" selection-end="895" vertical-scroll-proportion="0.59749305" vertical-offset="285" max-vertical-offset="1309">
+        <state line="89" column="0" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.7869081" vertical-offset="948" max-vertical-offset="1938">
           <folding />
         </state>
       </provider>
