@@ -21,9 +21,35 @@ class Mysqli_db
         }
     }
 
-    function fetch_row($table, $column, $where)
+    function fetch_row($table, $column, $where = '')
     {
+        global $settings;
+        $query = "SELECT {$column} FROM {$settings['db_prefix']}{$table} {$where}";
 
+        if($result = $this->MySQLI->query($query))
+        {
+            if($row = $result->fetch_row())
+            {
+                return $row;
+            }
+        }
+
+    }
+
+    function fetch_array($table, $column, $where = '')
+    {
+        global $settings;
+        $query = "SELECT {$column} FROM {$settings['db_prefix']}{$table} {$where}";
+        $data = array();
+
+        if($result = $this->MySQLI->query($query))
+        {
+            while($row = $result->fetch_assoc())
+            {
+                $data[] = $row;
+            }
+        }
+        return $data;
     }
 }
 

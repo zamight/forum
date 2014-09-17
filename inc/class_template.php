@@ -7,39 +7,23 @@ if(!MY_FORUM)
 
 class Template
 {
-    private $html;
+    public $html;
 
-    function build($get)
+    function build($template_name)
     {
-        global $lang;
+        global $db;
 
-        if($get == 'login')
-        {
-            $this->html = "
-            <form action='login.php' method='post'>
-            Username: <input type='text' name='username'><br />
-            Password: <input type='password' name='password'><br />
-            <input type='submit' name='Login' value='Login'>
-            </form>
-            ";
-        }
-        if($get == 'login_successful')
-        {
-            $this->html = "
-            {$lang->login_successful}
-            ";
-        }
-        if($get == 'login_unsuccessful')
-        {
-            $this->html = "
-            {$lang->login_unsuccessful}
-            ";
-        }
+        $template = $db->fetch_row('template', 'template', "WHERE title = '{$template_name}'");
+        $this->html = $template[0];
+
     }
 
     function get($template_name)
     {
+        global $db;
 
+        $template = $db->fetch_row('template', 'template', "WHERE title = '{$template_name}'");
+        return($template[0]);
     }
 
     function display()

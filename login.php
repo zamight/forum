@@ -13,45 +13,59 @@ require_once('plugintest.php');
 
 $plugin->run_plugins('login_start');
 
-//Is User Already Logged in?
-if(isset($user->settings['uid']))
+if($_POST)
 {
-    //Is User Banned?
-    if($user->settings['banned'])
+    if(validate_login(clean_str($_POST['username']), clean_str($_POST['password'])))
     {
-        error($lang->is_banned);
+        die("correct");
     }
     else
     {
-        error($lang->already_logged_in);
+        die("Incorrect Username & Password");
     }
 }
 else
 {
-    if(isset($_POST['username']) AND isset($_POST['password']))
+    //Is User Already Logged in?
+    if(isset($user->settings['uid']))
     {
-        $username = clean_str($_POST['username']);
-        $password = clean_str($_POST['password']);
-
-        if(validate_login($username, $password))
+        //Is User Banned?
+        if($user->settings['banned'])
         {
-            create_user_session($username, $password);
-            $plugin->run_plugins('login_successful');
-            $template->build('login_successful');
+            error($lang->is_banned);
         }
         else
         {
-            $plugin->run_plugins('login_unsuccessful');
-            $template->build('login_unsuccessful');
+            error($lang->already_logged_in);
         }
     }
     else
     {
-        $plugin->run_plugins('login_form');
-        $template->build('login');
+        if(isset($_POST['username']) AND isset($_POST['password']))
+        {
+            $username = clean_str($_POST['username']);
+            $password = clean_str($_POST['password']);
+
+            if(validate_login($username, $password))
+            {
+                create_user_session($username, $password);
+                $plugin->run_plugins('login_successful');
+                $template->build('login_successful');
+            }
+            else
+            {
+                $plugin->run_plugins('login_unsuccessful');
+                $template->build('login_unsuccessful');
+            }
+        }
+        else
+        {
+            $plugin->run_plugins('login_form');
+            $template->build('login');
+        }
     }
+
+    $plugin->run_plugins('login_end');
+
+    $template->display();
 }
-
-$plugin->run_plugins('login_end');
-
-$template->display();

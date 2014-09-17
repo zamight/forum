@@ -8,6 +8,7 @@ if(!MY_FORUM)
 $settings['db']['host'] = 'localhost';
 $settings['db']['username'] = 'root';
 $settings['db']['password'] = '';
-$settings['db']['table'] = 'tes';
+$settings['db']['table'] = 'forum';
 
 $settings['isSuperAdmin'] = '1';
+$settings['db_prefix'] = 'forum_';
